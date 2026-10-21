@@ -1,4 +1,8 @@
 // Small fetch wrapper with auth + 401 handling.
+// API base: set VITE_API_URL at build time (e.g. https://your-backend.onrender.com).
+// Empty = same origin (local dev uses the vite proxy).
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+
 export function getStoredUser() {
   try {
     const raw = localStorage.getItem('quizUser');
@@ -20,7 +24,7 @@ export async function api(path, { method = 'GET', body } = {}) {
   const stored = getStoredUser();
   const headers = { 'Content-Type': 'application/json' };
   if (stored?.token) headers.Authorization = `Bearer ${stored.token}`;
-  const res = await fetch(path, {
+  const res = await fetch(API_BASE + path, {
     method,
     headers,
     body: body !== undefined ? JSON.stringify(body) : undefined,

@@ -15,14 +15,17 @@ const PORT = Number(process.env.PORT) || 4000;
 const app = express();
 
 // ---------- middleware ----------
+// Comma-separated list in FRONTEND_URL / ADMIN_URL, plus optional extra
+// origins via ALLOWED_ORIGINS (e.g. "https://app.vercel.app,https://admin.vercel.app").
 const allowedOrigins = [
-  process.env.FRONTEND_URL,
-  process.env.ADMIN_URL,
+  ...(process.env.FRONTEND_URL || '').split(','),
+  ...(process.env.ADMIN_URL || '').split(','),
+  ...(process.env.ALLOWED_ORIGINS || '').split(','),
   'http://localhost:5173',
   'http://localhost:5174',
   'http://127.0.0.1:5173',
   'http://127.0.0.1:5174',
-].filter(Boolean);
+].map((s) => s.trim()).filter(Boolean);
 
 app.use(cors({
   origin(origin, callback) {

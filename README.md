@@ -1,51 +1,82 @@
 # QuizApp
 
-Full-stack quiz platform. Three parts:
+Full-stack quiz platform.
 
 ```
 app/
 ├── server.js, db.js, auth.js, shuffle.js, validateQuiz.js   # backend (Express + MongoDB)
 ├── seed/quiz.json       # ML111 mock exam — seeded into MongoDB on first run
-├── .env                 # secrets (MONGODB_URL, ADMIN_PASSWORD, JWT_SECRET, PORT)
-├── frontend/            # React (JSX) + Vite — the user app  (dev :5173, prod served at /)
-└── admin/               # React (JSX) + Vite — the admin app (dev :5174, prod served at /admin/)
+├── .env                 # backend secrets (not committed)
+├── frontend/            # React (JSX) + Vite — user app
+└── admin/               # React (JSX) + Vite — admin app
 ```
 
-## Run in production (one process serves everything)
+---
+
+## Deploy (Option B — backend on Render/Railway, frontends on Vercel)
+
+### 1. Backend → Render (or Railway / any Node host)
+
+- Push this repo to GitHub, create a **Web Service** from it.
+- **Build command:** `npm install`
+- **Start command:** `node server.js`
+- **Environment variables:**
+  - `MONGODB_URL` — your Atlas connection string
+  - `ADMIN_PASSWORD` — admin panel password
+  - `JWT_SECRET` — long random string
+  - `FRONTEND_URL` — your Vercel user-app URL, e.g. `https://quizapp.vercel.app`
+  - `ADMIN_URL` — your Vercel admin URL, e.g. `https://quizapp-admin.vercel.app`
+  - (`PORT` is set by the host automatically)
+- Note the backend URL, e.g. `https://quizapp-api.onrender.com`.
+
+> Atlas: Network Access must allow the host's IPs (`0.0.0.0/0` is simplest).
+
+### 2. User app → Vercel (project 1)
+
+- Import the same repo, set **Root Directory** to `frontend`.
+- Framework preset: **Vite** (Vercel auto-detects; `vercel.json` handles SPA routing).
+- Environment variable: `VITE_API_URL` = `https://quizapp-api.onrender.com` (your backend URL, no trailing slash).
+- Deploy.
+
+### 3. Admin app → Vercel (project 2)
+
+- Same repo again, **Root Directory** = `admin`.
+- Same env var: `VITE_API_URL` = your backend URL.
+- Deploy.
+
+Both React apps inline `VITE_API_URL` at build time, so changing it later = update the env var in Vercel and **redeploy** (trigger a new build).
+
+---
+
+## Run locally (all-in-one, one process)
 
 ```bash
-npm install          # backend deps
-node server.js       # http://localhost:4000  (user app at /, admin at /admin/, API at /api)
+npm install
+cp .env.example .env    # fill in MONGODB_URL etc.
+node server.js          # http://localhost:4000  — user app /home, admin /admin/, api /api
 ```
 
-`frontend/dist` and `admin/dist` are already built. If you change React code, rebuild:
+## Run locally in dev mode (hot reload, 3 terminals)
 
 ```bash
-cd frontend && npm install && npm run build
-cd ../admin && npm install && npm run build
-```
-
-## Run in development (hot reload)
-
-```bash
-node server.js                       # API on :4000
+node server.js                              # API on :4000
 cd frontend && npm install && npm run dev   # user app on :5173 (proxies /api)
-cd admin && npm install && npm run dev      # admin app on :5174 (proxies /api)
+cd admin && npm install && npm run dev      # admin on :5174 (proxies /api)
 ```
 
-## Environment variables (.env)
+In dev mode leave `VITE_API_URL` empty — the vite proxy forwards `/api` to `:4000`.
 
-| Var | Purpose |
-|---|---|
-| `MONGODB_URL` | MongoDB connection string (database name is taken from the path, e.g. `/shiftflow`) |
-| `PORT` | default 4000 |
-| `ADMIN_PASSWORD` | admin panel password |
-| `JWT_SECRET` | token signing secret — change in production |
+## Docker (self-host everything in one container)
+
+```bash
+docker build -t quizapp .
+docker run -p 4000:4000 --env-file .env quizapp
+```
 
 ## How it works
 
-- **Users**: type a name to enter (no passwords). Same name = same user (case-insensitive), so performance history stays attached to one ID.
-- **Topics**: admin pastes quiz JSON (MCQ / true-false / matching-blocks) to create or edit topics; users pick a topic to start.
-- **Shuffling**: every attempt re-shuffles question order server-side and re-shuffles MCQ options — retakes always look different.
-- **Calculator**: floating scientific calculator during quizzes (powers, roots, log/ln, trig, π, e, memory) — no eval, custom parser.
-- **Admin insights**: users table (attempts, avg/best/latest score) → drill into a user for per-topic stats and per-question breakdowns of every attempt.
+- **Users**: type a name (no passwords). Same name = same user ID, so history sticks.
+- **Topics**: admin pastes quiz JSON (mcq / truefalse / matching) to create topics; users pick one.
+- **Shuffling**: every attempt re-shuffles question order + MCQ options server-side.
+- **Calculator**: floating scientific calculator during quizzes (custom parser, no eval).
+- **Admin**: users table → per-user drill-down with per-topic stats and per-question breakdowns.
