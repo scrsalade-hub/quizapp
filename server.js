@@ -401,13 +401,16 @@ async function main() {
   // ---- static hosting of the two built React apps (production) ----
   const path = require('path');
   const fs = require('fs');
+  const send = (res, file) =>
+    res.sendFile(file, (err) => { if (err && !res.headersSent) res.status(404).send('Not found'); });
   const frontendDist = path.join(__dirname, 'frontend', 'dist');
   const adminDist = path.join(__dirname, 'admin', 'dist');
+  const landingPage = path.join(__dirname, 'index.html');
 
   if (fs.existsSync(adminDist)) {
     // admin app served under /admin (assets keep absolute /assets paths)
     app.use('/admin', express.static(adminDist));
-    app.get('/admin/*', (req, res) => res.sendFile(path.join(adminDist, 'index.html')));
+    app.get('/admin/*', (req, res) => send(res, path.join(adminDist, 'index.html')));
     app.use('/admin-assets', express.static(path.join(adminDist, 'assets')));
   }
   if (fs.existsSync(frontendDist)) {
@@ -415,11 +418,15 @@ async function main() {
     app.use('/assets', express.static(path.join(frontendDist, 'assets')));
     // SPA deep links for the user app (login, topics, quiz, results, history)
     app.get(['/home', '/home/*', '/login', '/topics', '/results', '/history', '/quiz/*'], (req, res) =>
-      res.sendFile(path.join(frontendDist, 'index.html'))
+      send(res, path.join(frontendDist, 'index.html'))
     );
     // landing page at / (root static files: index.html etc.)
     app.use(express.static(__dirname, { index: false }));
-    app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+    app.get('/', (req, res) => {
+      if (fs.existsSync(landingPage)) return send(res, landingPage);
+      // no landing page in the image — go straight to the user app
+      res.redirect('/home');
+    });
   }
 
   app.listen(PORT, () => {

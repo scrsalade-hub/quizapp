@@ -6,8 +6,8 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install --omit=dev
 
-# backend source + seed + env example
-COPY server.js db.js auth.js shuffle.js validateQuiz.js ./
+# backend source + seed + landing page
+COPY server.js db.js auth.js shuffle.js validateQuiz.js index.html ./
 COPY seed ./seed
 
 # pre-built frontend + admin apps (dist folders are committed)
