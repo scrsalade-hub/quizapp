@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizApp</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background:#ffffff;color:#000;min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+    text-align:center;padding:24px;
+  }
+  ::selection{background:#f1d40d;color:#dd3e3a;}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#6b6b6b;display:flex;align-items:center;gap:10px;}
+  .kicker::before{content:"";width:28px;height:1px;background:#000;}
+  h1{font-size:clamp(34px,7vw,56px);font-weight:800;text-transform:uppercase;letter-spacing:-.02em;}
+  h1 em{font-style:normal;background:#f1d40d;padding:0 .12em;}
+  p{font-family:Georgia,serif;font-size:16px;color:#333;max-width:460px;line-height:1.6;}
+  nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:14px;}
+  a.btn{
+    font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;
+    border:1px solid #000;color:#000;padding:16px 28px;min-height:52px;display:inline-flex;align-items:center;
+    transition:background .2s ease,color .2s ease;
+  }
+  a.btn:hover{background:#000;color:#f1d40d;}
+  a.btn.primary{background:#f1d40d;}
+  a.btn.primary:hover{background:#000;color:#f1d40d;}
+</style>
+</head>
+<body>
+  <div class="kicker">QuizApp</div>
+  <h1>Pick a <em>door</em></h1>
+  <p>The user app is where students take quizzes. The admin app is where the owner manages topics and reviews performance.</p>
+  <nav>
+    <a class="btn primary" href="/home">Take a Quiz &#8594;</a>
+    <a class="btn" href="/admin/">Admin Panel &#8594;</a>
+  </nav>
+</body>
+</html>

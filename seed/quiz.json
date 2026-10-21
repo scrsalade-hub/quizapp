@@ -1,0 +1,769 @@
+{
+  "title": "ML111 Test 1 Mock Exam - Safety, Dilutions, Measurement & QA",
+  "instructions": "Weighted like the real test: Safety 35-40%, Dilutions 25-30%, Math/Systems of Measurement & Statistics 20-25%, QA & QSEs 5-10%. Answer each question, check your result, read the explanation, then move on. Goal: 100%.",
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "Which class of hazard includes repetitive stress injuries from microscopes and computer workstations?",
+      "options": [
+        "Physical",
+        "Ergonomic",
+        "Psychosocial",
+        "Chemical"
+      ],
+      "answer": 1,
+      "explanation": "Ergonomic hazards = noise, standing, bending, repetitive stress injuries, microscopes and computer workstations."
+    },
+    {
+      "type": "mcq",
+      "question": "Bacteria, viruses, rickettsiae, fungi and parasites belong to which hazard class?",
+      "options": [
+        "Chemical",
+        "Physical",
+        "Biological",
+        "Ergonomic"
+      ],
+      "answer": 2,
+      "explanation": "Biological hazards cause infections from these 5 organisms. Memory hook: BVRFP - 'Bad Viruses Really Fear Penicillin'."
+    },
+    {
+      "type": "mcq",
+      "question": "Headaches, loss of appetite and insomnia are symptoms of which hazard class?",
+      "options": [
+        "Physical",
+        "Biological",
+        "Psychosocial",
+        "Chemical"
+      ],
+      "answer": 2,
+      "explanation": "Psychosocial hazards (stress, abuse, harassment) show physical symptoms like headaches, insomnia and loss of appetite, plus behavioural and mental/emotional symptoms."
+    },
+    {
+      "type": "mcq",
+      "question": "The correct ORDER of effectiveness of control measures is:",
+      "options": [
+        "Personal, Administrative, Engineering",
+        "Administrative, Engineering, Personal",
+        "Engineering, Administrative, Personal",
+        "Personal, Engineering, Administrative"
+      ],
+      "answer": 2,
+      "explanation": "Engineering (fix the hazard at the source, like a fume hood) is most effective. PPE is the LAST line of defence - like a seatbelt, not the brakes."
+    },
+    {
+      "type": "mcq",
+      "question": "Which of these is an ENGINEERING control?",
+      "options": [
+        "Safety training",
+        "Fume hood",
+        "Gloves",
+        "Worker orientation"
+      ],
+      "answer": 1,
+      "explanation": "Engineering controls remove the hazard at the source: fume hoods, biosafety cabinets, guards, substitution of less toxic substances. Training and orientation are administrative; gloves are personal."
+    },
+    {
+      "type": "mcq",
+      "question": "Scheduling workers to avoid overexposure is which type of control?",
+      "options": [
+        "Engineering",
+        "Administrative",
+        "Personal",
+        "Substitution"
+      ],
+      "answer": 1,
+      "explanation": "Administrative controls = rules and schedules: orientation, safe work procedures, training, scheduling, inspections, emergency plans."
+    },
+    {
+      "type": "mcq",
+      "question": "TLV stands for - and means:",
+      "options": [
+        "Total Limit Value - the legal fine",
+        "Threshold Limit Value - the highest level you can be exposed to without ill effects",
+        "Toxic Level Variance - average exposure",
+        "Tested Laboratory Value - lowest detectable level"
+      ],
+      "answer": 1,
+      "explanation": "TLV = Threshold Limit Value = the HIGHEST level of exposure without ill effects. Standards come from the provincial government responsible for OHS."
+    },
+    {
+      "type": "mcq",
+      "question": "Due diligence means:",
+      "options": [
+        "Blaming the employee after an accident",
+        "Doing everything reasonable to protect worker health and safety",
+        "Following only federal law",
+        "Passing inspections"
+      ],
+      "answer": 1,
+      "explanation": "Due diligence = take all reasonable precautions to prevent injuries. It is the legal responsibility of the EMPLOYER and requires training, record keeping, enforcement and clear policies."
+    },
+    {
+      "type": "mcq",
+      "question": "Bill C-45 (Canada Criminal Code) means failure to direct work safely can lead to:",
+      "options": [
+        "Fines only",
+        "Criminal negligence charges",
+        "License suspension",
+        "Union decertification"
+      ],
+      "answer": 1,
+      "explanation": "Bill C-45 creates a legal duty for anyone directing work to take reasonable steps for safety. Failure = CRIMINAL NEGLIGENCE."
+    },
+    {
+      "type": "mcq",
+      "question": "The three components of WHMIS 2015 are:",
+      "options": [
+        "Labels, fines, inspections",
+        "SDS, labels/classifications, employee education and training",
+        "PPE, training, signage",
+        "MSDS, TLV, due diligence"
+      ],
+      "answer": 1,
+      "explanation": "WHMIS 2015 = (1) Safety Data Sheet (SDS, formerly MSDS), (2) Labels and classifications, (3) Employee education and training."
+    },
+    {
+      "type": "mcq",
+      "question": "A supplier label must be written in:",
+      "options": [
+        "English only",
+        "French only",
+        "French and English",
+        "Any language"
+      ],
+      "answer": 2,
+      "explanation": "Supplier labels must be bilingual (French AND English) and include: product identifier, supplier, pictogram, signal word, hazard statements and precautionary statements."
+    },
+    {
+      "type": "mcq",
+      "question": "A workplace label is REQUIRED when:",
+      "options": [
+        "A product is decanted into another container",
+        "The supplier label is lost or illegible",
+        "A hazardous product is produced at the workplace and used there",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All three situations require a workplace label. Exception: if used IMMEDIATELY or used only by the person who decanted it during that shift - then only the product identifier is needed."
+    },
+    {
+      "type": "mcq",
+      "question": "A hazardous product poured into a beaker for IMMEDIATE use must be labelled with:",
+      "options": [
+        "A full workplace label",
+        "The product identifier only",
+        "A supplier label",
+        "Nothing"
+      ],
+      "answer": 1,
+      "explanation": "Immediate use or same-person same-shift use = only the product identifier is required. This is a classic trap question."
+    },
+    {
+      "type": "mcq",
+      "question": "Transport of Dangerous Goods (TDG) for HIGHWAYS is controlled by which level of government?",
+      "options": [
+        "Federal",
+        "Provincial",
+        "Municipal",
+        "International"
+      ],
+      "answer": 1,
+      "explanation": "Provincial handles TDG for highways. Federal handles TDG for RAIL AND SEAWAY. Municipal handles fire and building codes. H&S legislation is PRIMARILY provincial."
+    },
+    {
+      "type": "mcq",
+      "question": "A hazard is best defined as:",
+      "options": [
+        "The chance an injury will occur",
+        "Anything with the potential to cause injury or illness",
+        "An injury that already happened",
+        "A risk assessment score"
+      ],
+      "answer": 1,
+      "explanation": "Hazard = potential to cause harm. Risk = the CHANCE it actually happens. Not all hazards are risks."
+    },
+    {
+      "type": "mcq",
+      "question": "The FIRST step of a job hazard assessment is to:",
+      "options": [
+        "Verify controls",
+        "List the critical/major steps of the job",
+        "Implement controls",
+        "Identify equipment"
+      ],
+      "answer": 1,
+      "explanation": "Order: (1) list 5-10 major steps, (2) identify equipment/procedures, (3) identify hazards at each step (think worst case), (4) implement controls, (5) verify effectiveness."
+    },
+    {
+      "type": "mcq",
+      "question": "A risk assessment rates which three factors from 1 to 4?",
+      "options": [
+        "Cost, time, staff",
+        "Probability, severity, frequency of exposure",
+        "Hazard, risk, control",
+        "Area, personal, biological"
+      ],
+      "answer": 1,
+      "explanation": "Risk = Probability x Severity x Frequency of exposure, each rated 1-4, then classified."
+    },
+    {
+      "type": "mcq",
+      "question": "A fire in a bin of solvent-soaked rags is which class?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "K"
+      ],
+      "answer": 1,
+      "explanation": "Class B = liquid fuels (solvents, oil, gasoline). A = ordinary combustibles (wood, paper), C = electrical, D = combustible metals, K = cooking oils/fats."
+    },
+    {
+      "type": "mcq",
+      "question": "Why can flames reignite after using a CO2 extinguisher?",
+      "options": [
+        "CO2 is flammable",
+        "The gas dissipates very quickly",
+        "It leaves corrosive powder",
+        "It reacts with oils"
+      ],
+      "answer": 1,
+      "explanation": "CO2 smothers the fire but the gas blows away fast, so hot material can catch fire again. CO2 is also ineffective on Class A fires."
+    },
+    {
+      "type": "mcq",
+      "question": "The eyewash and safety shower must provide water flow for ___ and be reachable within ___:",
+      "options": [
+        "5 minutes / 5 seconds",
+        "15 minutes / 10 seconds",
+        "10 minutes / 30 seconds",
+        "30 minutes / 1 minute"
+      ],
+      "answer": 1,
+      "explanation": "15 minutes of flow ('you have TIME to SEE again') and reachable within 10 seconds. Memorize both numbers."
+    },
+    {
+      "type": "mcq",
+      "question": "For a LARGE chemical spill, your FIRST action is to:",
+      "options": [
+        "Neutralize it",
+        "Evacuate the area immediately",
+        "Call H&S",
+        "Wipe it up with paper towel"
+      ],
+      "answer": 1,
+      "explanation": "Large spill = evacuate immediately, then call 922 from a safe location and give responders the SDS. Small spills with no odours can be handled with the spill kit."
+    },
+    {
+      "type": "mcq",
+      "question": "Biohazardous waste is rendered harmless by:",
+      "options": [
+        "Freezing",
+        "Autoclaving or chemical treatment",
+        "Drying",
+        "Dilution with water"
+      ],
+      "answer": 1,
+      "explanation": "Biohazardous waste (blood, bodily fluids, contaminated materials) is stored separately and autoclaved or chemically treated."
+    },
+    {
+      "type": "mcq",
+      "question": "In the college lab, security is reached by dialing:",
+      "options": [
+        "911",
+        "922",
+        "475-6624",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "Dial 922 from any college phone, 24 hours a day. 475-6624 is Health & Safety for spill disposal arrangements."
+    },
+    {
+      "type": "mcq",
+      "question": "A 1:10 RATIO of sample to diluent is actually which dilution?",
+      "options": [
+        "1/10",
+        "1/11",
+        "1/9",
+        "10/1"
+      ],
+      "answer": 1,
+      "explanation": "THE #1 mark-loser. 1:10 ratio = 1 part sample + 10 parts diluent = 11 total parts = a 1/11 DILUTION. A 1/10 dilution means 1 sample + 9 diluent."
+    },
+    {
+      "type": "mcq",
+      "question": "Dilution is calculated as:",
+      "options": [
+        "Sample / diluent",
+        "Sample / total volume (sample + diluent)",
+        "Diluent / sample",
+        "Total volume / diluent"
+      ],
+      "answer": 1,
+      "explanation": "Dilution = sample volume divided by TOTAL volume. The bottom number always includes the sample itself."
+    },
+    {
+      "type": "mcq",
+      "question": "You mix 20 mcL of sample with 80 mcL of diluent. The dilution is:",
+      "options": [
+        "1/4",
+        "1/5",
+        "1/80",
+        "4/5"
+      ],
+      "answer": 1,
+      "explanation": "Total = 20 + 80 = 100 mcL. 20/100 = 1/5 dilution."
+    },
+    {
+      "type": "mcq",
+      "question": "A 1/5 dilution of serum gives a creatinine result of 4.5 mg/dL. The actual concentration in the original sample is:",
+      "options": [
+        "4.5 mg/dL",
+        "0.9 mg/dL",
+        "22.5 mg/dL",
+        "9 mg/dL"
+      ],
+      "answer": 2,
+      "explanation": "Diluted result x dilution factor = original. Factor = reciprocal of 1/5 = 5. So 4.5 x 5 = 22.5 mg/dL."
+    },
+    {
+      "type": "mcq",
+      "question": "A 1/1000 final dilution made by serial dilution using equal steps would be:",
+      "options": [
+        "1/10 x 1/10 x 1/10",
+        "1/100 x 1/10",
+        "1/2 ten times",
+        "1/1000 in one step only"
+      ],
+      "answer": 0,
+      "explanation": "Serial dilution: multiply the fractions. 1/10 x 1/10 x 1/10 = 1/1000. Same dilution in each tube."
+    },
+    {
+      "type": "mcq",
+      "question": "In a serial 10-fold dilution, tube 3 has a dilution of:",
+      "options": [
+        "1/30",
+        "1/300",
+        "1/1000",
+        "1/10"
+      ],
+      "answer": 2,
+      "explanation": "10-fold: tube x = 1/(10^x). Tube 1 = 1/10, tube 2 = 1/100, tube 3 = 1/1000."
+    },
+    {
+      "type": "mcq",
+      "question": "In a serial DOUBLING dilution, tube 4 has a dilution of:",
+      "options": [
+        "1/8",
+        "1/16",
+        "1/4",
+        "1/32"
+      ],
+      "answer": 1,
+      "explanation": "Doubling: tube x = 1/(2^x). Tube 4 = 1/16. (Tube 1 = 1/2, tube 2 = 1/4, tube 3 = 1/8, tube 4 = 1/16.) Used in serology for antibody strength."
+    },
+    {
+      "type": "mcq",
+      "question": "In a TUBE dilution series, each tube has:",
+      "options": [
+        "The same dilution",
+        "A different dilution",
+        "Only doubling dilutions",
+        "No diluent"
+      ],
+      "answer": 1,
+      "explanation": "Tube dilution series = DIFFERENT dilution per tube. Each tube's concentration = previous tube's concentration divided by that tube's dilution factor."
+    },
+    {
+      "type": "mcq",
+      "question": "A 1650 mg/dL sample goes through tubes diluted 1/5 then 1/2. The concentration in tube 2 is:",
+      "options": [
+        "330 mg/dL",
+        "165 mg/dL",
+        "82.5 mg/dL",
+        "660 mg/dL"
+      ],
+      "answer": 1,
+      "explanation": "Tube 1: 1650 / 5 = 330. Tube 2: 330 / 2 = 165 mg/dL."
+    },
+    {
+      "type": "mcq",
+      "question": "A titer is:",
+      "options": [
+        "The first tube with a reaction",
+        "The inverse of the dilution where the LAST measurable reaction occurred",
+        "The amount of antigen added",
+        "The dilution factor of tube 1"
+      ],
+      "answer": 1,
+      "explanation": "Titer = inverse of the last positive dilution in an antigen-antibody test. If the last positive is 1/640, the titer is 640."
+    },
+    {
+      "type": "mcq",
+      "question": "Serial dilutions of serum show positive reactions up to 1/320 but not at 1/640. The titer is:",
+      "options": [
+        "640",
+        "320",
+        "1/320",
+        "160"
+      ],
+      "answer": 1,
+      "explanation": "Last measurable reaction = 1/320, so the titer = 320 (the inverse). A LOW titer of a protective antibody may mean NO immunity."
+    },
+    {
+      "type": "mcq",
+      "question": "In microbiology, antibiotics are diluted to determine the:",
+      "options": [
+        "Titer",
+        "Minimal inhibitory concentration (MIC)",
+        "Linear range",
+        "Reference range"
+      ],
+      "answer": 1,
+      "explanation": "Why we dilute: chemistry = result outside the instrument's linear range; microbiology = MIC; immunology = titers."
+    },
+    {
+      "type": "mcq",
+      "question": "To make a 1/4 dilution with a total volume of 100 mcL, you need:",
+      "options": [
+        "4 mcL sample + 96 mcL diluent",
+        "25 mcL sample + 75 mcL diluent",
+        "20 mcL sample + 80 mcL diluent",
+        "40 mcL sample + 60 mcL diluent"
+      ],
+      "answer": 1,
+      "explanation": "Ratio and proportion: 1/4 = X/100, so X = 25 mcL sample. Diluent = 100 - 25 = 75 mcL."
+    },
+    {
+      "type": "mcq",
+      "question": "Which is an example of a SEMIQUANTITATIVE measurement?",
+      "options": [
+        "5.2 mg/dL glucose",
+        "Urine dipstick read as trace, 1+, 2+, 3+",
+        "Positive or negative",
+        "Temperature of 37 C"
+      ],
+      "answer": 1,
+      "explanation": "Quantitative = precise number. Qualitative = yes/no. Semiquantitative = an ESTIMATE of amount, like dipstick grades."
+    },
+    {
+      "type": "mcq",
+      "question": "The SI system is based on how many basic units?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "SI has SEVEN units: meter, kilogram, mole, second, ampere, kelvin, candela. SI is the revised metric system (1960, revised 1971) replacing older metric in labs."
+    },
+    {
+      "type": "mcq",
+      "question": "Convert 12 mL to mcL using the exponent method.",
+      "options": [
+        "0.012 mcL",
+        "120 mcL",
+        "12000 mcL",
+        "12000000 mcL"
+      ],
+      "answer": 2,
+      "explanation": "milli = 10^-3, micro = 10^-6, difference = 3 places to the right: 12 mL = 12,000 mcL."
+    },
+    {
+      "type": "mcq",
+      "question": "Convert 98.6 F to Celsius.",
+      "options": [
+        "37 C",
+        "32 C",
+        "40 C",
+        "36.5 C"
+      ],
+      "answer": 0,
+      "explanation": "C = (F - 32) x 5/9 = (98.6 - 32) x 5/9 = 66.6 x 5/9 = 37 C. Normal body temperature."
+    },
+    {
+      "type": "mcq",
+      "question": "MCV (mean cell volume) is reported in which unit?",
+      "options": [
+        "Nanoliters",
+        "Femtoliters (fL)",
+        "Microliters",
+        "Picograms"
+      ],
+      "answer": 1,
+      "explanation": "MCV uses femtoliters (10^-15). Know the prefix ladder: kilo 10^3 down to femto 10^-15."
+    },
+    {
+      "type": "mcq",
+      "question": "Results: 4, 7, 7, 9, 12. The mean, median and mode are:",
+      "options": [
+        "Mean 7.8, median 7, mode 7",
+        "Mean 7, median 7.8, mode 9",
+        "Mean 7.8, median 9, mode 7",
+        "Mean 7, median 7, mode 12"
+      ],
+      "answer": 0,
+      "explanation": "Mean = 39/5 = 7.8. Median = middle number = 7. Mode = most frequent = 7. In a Gaussian distribution all three would be equal."
+    },
+    {
+      "type": "mcq",
+      "question": "Accuracy and precision are best described as:",
+      "options": [
+        "Accuracy = repeatability, precision = closeness to true value",
+        "Accuracy = closeness to the true value, precision = same result on repeated analysis",
+        "They mean the same thing",
+        "Accuracy is for QC only"
+      ],
+      "answer": 1,
+      "explanation": "Bullseye picture: accuracy = hitting the center (true value); precision = tight grouping (repeatable). We want BOTH."
+    },
+    {
+      "type": "mcq",
+      "question": "Approximately what percentage of results fall within +/- 2 SD of the mean in a normal distribution?",
+      "options": [
+        "68.2%",
+        "95.5%",
+        "99.7%",
+        "50%"
+      ],
+      "answer": 1,
+      "explanation": "Memorize: +/-1 SD = 68.2%, +/-2 SD = 95.5%, +/-3 SD = 99.7%. Reference ranges are usually set at mean +/- 2 SD (95% of healthy people)."
+    },
+    {
+      "type": "mcq",
+      "question": "Coefficient of variation (CV) is calculated as:",
+      "options": [
+        "(mean / SD) x 100",
+        "(SD / mean) x 100",
+        "SD x mean",
+        "Variance / mean"
+      ],
+      "answer": 1,
+      "explanation": "CV = (SD / mean) x 100. It expresses SD as a percentage so you can compare precision between different tests. LOWER CV = better precision."
+    },
+    {
+      "type": "mcq",
+      "question": "If QC is NOT in control, patient results are:",
+      "options": [
+        "Reported with a note",
+        "Reported normally",
+        "NOT released",
+        "Recalculated"
+      ],
+      "answer": 2,
+      "explanation": "QC in control = results CAN be reported. QC out of control = results are NOT released until the problem is fixed."
+    },
+    {
+      "type": "mcq",
+      "question": "Analytical specificity is the ability to:",
+      "options": [
+        "Detect the presence of the target molecule",
+        "Distinguish the target from other molecules (true negative)",
+        "Measure small amounts",
+        "Repeat results"
+      ],
+      "answer": 1,
+      "explanation": "Sensitivity = detecting the target's presence (true positive). Specificity = distinguishing the target from other molecules (true negative)."
+    },
+    {
+      "type": "mcq",
+      "question": "QMP-LS is funded by:",
+      "options": [
+        "The College of Physicians",
+        "The Ministry of Health & Long Term Care",
+        "CIHI",
+        "The laboratory itself"
+      ],
+      "answer": 1,
+      "explanation": "QMP-LS oversees licensed Ontario labs and is funded by the MOHLTC. It is responsible for IQMH (formerly OLA) and EQA."
+    },
+    {
+      "type": "mcq",
+      "question": "QC vs QA: which statement is correct?",
+      "options": [
+        "QA is a component of QC",
+        "QC is a component of QA",
+        "They are identical",
+        "QC applies only to equipment"
+      ],
+      "answer": 1,
+      "explanation": "QA is the big umbrella (all policies to assure quality patient care). QC is one component under it - the specific checks employees perform."
+    },
+    {
+      "type": "truefalse",
+      "question": "Routine Practices are also known as standard or universal precautions.",
+      "answer": true,
+      "explanation": "Routine Practices = standard/universal precautions - treat every specimen as potentially infectious."
+    },
+    {
+      "type": "truefalse",
+      "question": "It is acceptable to pipette by mouth if you are careful and the solution is not toxic.",
+      "answer": false,
+      "explanation": "NEVER pipette by mouth. No exceptions. Always use a bulb or pipette aid."
+    },
+    {
+      "type": "truefalse",
+      "question": "During a fire evacuation you should close but NOT lock doors, and use the stairs.",
+      "answer": true,
+      "explanation": "Close doors (do not lock), exit calmly by the stairs - never the elevator - and call 922."
+    },
+    {
+      "type": "truefalse",
+      "question": "An injured person should always be moved immediately to a comfortable location.",
+      "answer": false,
+      "explanation": "Do NOT move an injured person unless required for safety. Make them comfortable where they are and call 922."
+    },
+    {
+      "type": "truefalse",
+      "question": "A 1:4 ratio of sample to diluent is the same as a 1/4 dilution.",
+      "answer": false,
+      "explanation": "1:4 ratio = 1 sample + 4 diluent = 5 total parts = a 1/5 dilution. Ratios and dilutions are NOT the same."
+    },
+    {
+      "type": "truefalse",
+      "question": "In a serial dilution, the final dilution is found by ADDING the individual dilutions.",
+      "answer": false,
+      "explanation": "You MULTIPLY them: 1/10 x 1/10 x 1/10 = 1/1000."
+    },
+    {
+      "type": "truefalse",
+      "question": "A smaller variance indicates a MORE precise set of results.",
+      "answer": true,
+      "explanation": "Variance shows how close together the numbers are. Smaller variance = tighter grouping = more precise."
+    },
+    {
+      "type": "truefalse",
+      "question": "Military (24-hour) time is used in hospitals to reduce documentation and medication errors.",
+      "answer": true,
+      "explanation": "Hospitals operate 24/7, and the 24-hour clock removes AM/PM confusion, reducing errors."
+    },
+    {
+      "type": "truefalse",
+      "question": "Defective equipment should be clearly marked and removed from service.",
+      "answer": true,
+      "explanation": "Equipment QSE: defective equipment is marked and REMOVED; new equipment is VALIDATED before use."
+    },
+    {
+      "type": "truefalse",
+      "question": "For stock rotation, new reagents go to the BACK and older stock moves to the FRONT.",
+      "answer": true,
+      "explanation": "First in, first out. Older stock gets used first so nothing expires - critically important for lot number tracking."
+    },
+    {
+      "type": "matching",
+      "question": "Match each fire class to what is burning.",
+      "pairs": [
+        {
+          "left": "Class A",
+          "right": "Ordinary combustibles (wood, paper, cloth)"
+        },
+        {
+          "left": "Class B",
+          "right": "Liquid fuels (solvents, oil, gasoline)"
+        },
+        {
+          "left": "Class C",
+          "right": "Electrical equipment (fuse boxes, motors)"
+        },
+        {
+          "left": "Class K",
+          "right": "Cooking media (oils, lards, fats)"
+        }
+      ],
+      "explanation": "Do not forget Class D = combustible metals (sodium, potassium). Water extinguishers are dangerous around lab equipment and some chemicals."
+    },
+    {
+      "type": "matching",
+      "question": "Match each level of government to its safety responsibility.",
+      "pairs": [
+        {
+          "left": "Provincial",
+          "right": "OH&S Act and TDG for highways"
+        },
+        {
+          "left": "Federal",
+          "right": "Canada Labour Code, TDG rail and seaway, Bill C-45"
+        },
+        {
+          "left": "Municipal",
+          "right": "Fire codes and building codes"
+        },
+        {
+          "left": "Workplace",
+          "right": "Routine Practices and its own procedures"
+        }
+      ],
+      "explanation": "H&S legislation is PRIMARILY provincial, but know what federal and municipal each own."
+    },
+    {
+      "type": "matching",
+      "question": "Match each statistics term to its meaning.",
+      "pairs": [
+        {
+          "left": "Mean",
+          "right": "Sum of values divided by n"
+        },
+        {
+          "left": "Median",
+          "right": "The central number when values are in order"
+        },
+        {
+          "left": "Mode",
+          "right": "The most frequently occurring value"
+        },
+        {
+          "left": "Gaussian distribution",
+          "right": "Mean, median and mode are all equal"
+        }
+      ],
+      "explanation": "In a normal (Gaussian) bell curve all three measures sit at the same central point."
+    },
+    {
+      "type": "matching",
+      "question": "Match each dilution type to its description.",
+      "pairs": [
+        {
+          "left": "Serial dilution",
+          "right": "Same dilution in each tube of the series"
+        },
+        {
+          "left": "Serial doubling",
+          "right": "Every tube is 1/2 of the one before (used in serology)"
+        },
+        {
+          "left": "Serial 10-fold",
+          "right": "Every tube is 1/10 of the one before"
+        },
+        {
+          "left": "Tube dilution series",
+          "right": "A different dilution in each tube"
+        }
+      ],
+      "explanation": "Serial = same step repeated. Fold tells you the step size (doubling = 1/2, 10-fold = 1/10). Tube series = different each tube."
+    },
+    {
+      "type": "matching",
+      "question": "Match each quality term to its definition.",
+      "pairs": [
+        {
+          "left": "Quality indicators",
+          "right": "Specific, objective, well-defined, measurable monitors"
+        },
+        {
+          "left": "QMS",
+          "right": "System lab management must establish, document, implement and maintain"
+        },
+        {
+          "left": "Lot numbers",
+          "right": "Let the lab track products to pinpoint problems"
+        },
+        {
+          "left": "Occurrence management",
+          "right": "Capturing nonconforming events and finding root causes"
+        }
+      ],
+      "explanation": "These come from the QA and 12 QSEs section - small part of the test but easy marks."
+    }
+  ]
+}
